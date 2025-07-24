@@ -1,0 +1,172 @@
+
+/* Google Fonts */
+.noto_serif_normal {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+.inter_normal {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+main > section{
+    margin-top: 120px;
+}
+
+/* Shared Styles */
+
+.hide{
+    display: none;
+}
+
+.inter22_reg{
+    font-size: 1.38rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+.noto_serif50_bold{
+    font-size:3.13rem;
+    color: #000000;
+}
+.span_text{
+    color: #E95A08;
+}
+
+/* navbar style */
+
+header{
+    margin-top: 15px;
+}
+
+.menu ul li a{
+    color: #8987A1;
+}
+.menu ul li a:hover{
+    color:#252432;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.cart button {
+  color: #000000;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cart button i,
+.cart button span {
+  color: #000000;
+}
+
+.cart button:hover {
+  background-color: #E95A08;
+  transition: .3s;
+}
+
+.cart button:hover i,
+.cart button:hover span {
+  color: #fff;
+}
+
+/* banner section style */
+
+.banner_container h1{
+    font-weight: bold;
+    font-size: 4.0625rem;
+    color: #000000;
+}
+.fresh_flowers{
+    color: #E95A08;
+}
+.banner_img{
+    width: 100%;
+}
+
+/* flower card styles */
+
+.flower_cards{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 30px;
+    column-gap: 20px;
+}
+.flwr_card img{
+    border-radius: 5px;
+}
+
+.btn_card{
+    border-radius: 5px;
+    width: 100%;
+    background-color: #E95A08;
+    padding: 15px 30px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+
+.flwr_name_price{
+    margin: 20px auto;
+}
+.flwr_name, .flwr_price{
+    font-size: 1.38rem;
+    font-weight: 500;
+    color: #111111;
+}
+.flwr_price{
+    font-weight: bold;
+}
+
+
+/* 
+****
+***
+**
+* */
+
+/* Responsive part */
+/* Responsive for small device */
+
+@media screen and (max-width: 576px) {
+    main > section{
+    margin-top: 50px;
+}
+    nav{
+        margin: 0px 20px;
+    }
+    .menu ul{
+        display: none;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner_container{
+        width: 100%;
+    }
+    .banner_container h1{
+        font-size: 2.0625rem;
+    }
+    .banner_img{
+        width: 100%;
+    }
+    .noto_serif50_bold{
+    font-size:1.8rem;
+    color: #000000;
+}
+}

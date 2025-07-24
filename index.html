@@ -1,20 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Flowers</title>
-    <link rel="stylesheet" href="./styles/style.css">
-</head>
-<body>
-    <header>
 
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Css stylesheet -->
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <!-- fontawesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- tailwind css CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="inter_normal">
+    <header class="max-w-[1140px] mx-auto">
+        <!-- Nav section Start -->
+        <section class="navbar">
+            <nav class="flex justify-between items-center">
+                <div>
+                    <img src="./assets/logo.png" alt="Faugei Logo">
+                </div>
+                <div class="menu flex gap-10">
+                    <ul class="flex gap-10">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">About us</a></li>
+                    </ul>
+                    <div class="cart">
+                        <button>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span>Cart ($56)</span>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+            <!-- Nav section end -->
+        </section>
     </header>
     <main>
+        <!-- Banner Section START -->
+        <section class="flex flex-col-reverse p-4 md:flex-row md:items-end md:p-0">
+            <div class="w-full md:w-1/2 text-left banner_container">
+                <h1 class="noto_serif_normal">
+                    ALWAYS <span class="fresh_flowers">FRESH <br> FLOWERS</span>
+                </h1>
+                <p class="mt-4 inter22_reg">
+                    Indulge your senses with the beauty and fragrance of our fresh flower shop.
+                    From classic roses to exotic blooms, we offer a wide variety of fresh flowers
+                    that are perfect for any occasion.
+                </p>
+            </div>
+
+            <div class="w-full md:w-1/2 flex justify-center md:justify-end p-4">
+                <img src="./assets/hero-flower.png" alt="Hero Flower" class="max-w-full h-auto">
+            </div>
+        </section>
+
+        <!-- Banner Section End -->
+
+        <!-- Plant section START -->
+        <section class="plant">
+            <div class="text-center px-35">
+                <h1 class="noto_serif50_bold">
+                    <span class="span_text">Our </span>Plants
+                </h1>
+                <p class="inter22_reg">Indulge your senses with the beauty and fragrance of our fresh flower shop. From
+                    classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+            </div>
+            <div class="flower_cards">
+                <div class="flwr_card">
+                    <img src="./assets/sample-flower-image.png" class="w-full" alt="Sample flower">
+                    <div class="flwr_name_price text-center">
+                        <h4 class="flwr_name">Lily Blossom</h4>
+                        <h4 class="flwr_price">20 USD</h4>
+                    </div>
+                    <div class="btn_card text-center">
+                        <button><a href="#">ADD TO CART</a></button>
+                    </div>
+                </div>
+                <div class="flwr_card">
+                    <img src="./assets/sample-flower-image.png" class="w-full" alt="Sample flower">
+                    <div class="flwr_name_price text-center">
+                        <h4 class="flwr_name">Lily Blossom</h4>
+                        <h4 class="flwr_price">20 USD</h4>
+                    </div>
+                    <div class="btn_card text-center">
+                        <button><a href="#">ADD TO CART</a></button>
+                    </div>
+                </div>
+                <div class="flwr_card">
+                    <img src="./assets/sample-flower-image.png" class="w-full" alt="Sample flower">
+                    <div class="flwr_name_price text-center">
+                        <h4 class="flwr_name">Lily Blossom</h4>
+                        <h4 class="flwr_price">20 USD</h4>
+                    </div>
+                    <div class="btn_card text-center">
+                        <button><a href="#">ADD TO CART</a></button>
+                    </div>
+                </div>
+                <div class="flwr_card">
+                    <img src="./assets/sample-flower-image.png" class="w-full" alt="Sample flower">
+                    <div class="flwr_name_price text-center">
+                        <h4 class="flwr_name">Lily Blossom</h4>
+                        <h4 class="flwr_price">20 USD</h4>
+                    </div>
+                    <div class="btn_card text-center">
+                        <button><a href="#">ADD TO CART</a></button>
+                    </div>
+                </div>
+                <div class="flwr_card">
+                    <img src="./assets/sample-flower-image.png" class="w-full" alt="Sample flower">
+                    <div class="flwr_name_price text-center">
+                        <h4 class="flwr_name">Lily Blossom</h4>
+                        <h4 class="flwr_price">20 USD</h4>
+                    </div>
+                    <div class="btn_card text-center">
+                        <button><a href="#">ADD TO CART</a></button>
+                    </div>
+                </div>
+                <div class="flwr_card">
+                    <img src="./assets/sample-flower-image.png" class="w-full" alt="Sample flower">
+                    <div class="flwr_name_price text-center">
+                        <h4 class="flwr_name">Lily Blossom</h4>
+                        <h4 class="flwr_price">20 USD</h4>
+                    </div>
+                    <div class="btn_card text-center">
+                        <button><a href="#">ADD TO CART</a></button>
+                    </div>
+                </div>
+                <div class="flwr_card">
+                    <img src="./assets/sample-flower-image.png" class="w-full" alt="Sample flower">
+                    <div class="flwr_name_price text-center">
+                        <h4 class="flwr_name">Lily Blossom</h4>
+                        <h4 class="flwr_price">20 USD</h4>
+                    </div>
+                    <div class="btn_card text-center">
+                        <button><a href="#">ADD TO CART</a></button>
+                    </div>
+                </div>
+                <div class="flwr_card">
+                    <img src="./assets/sample-flower-image.png" class="w-full" alt="Sample flower">
+                    <div class="flwr_name_price text-center">
+                        <h4 class="flwr_name">Lily Blossom</h4>
+                        <h4 class="flwr_price">20 USD</h4>
+                    </div>
+                    <div class="btn_card text-center">
+                        <button><a href="#">ADD TO CART</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Plant section Emd -->
+
 
     </main>
     <footer>
-        
+
     </footer>
 </body>
+
 </html>

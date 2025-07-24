@@ -149,6 +149,7 @@ header {
 
 .plants_lover_title_subTitle ol li {
     margin-top: 20px;
+    margin-left: 50px;
 }
 
 /* ********************Challenge Part********************** */
@@ -277,6 +278,38 @@ header {
     cursor: pointer;
 }
 
+/* Footer section styles */
+
+.footer{
+    margin: 50px 150px 30px 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_logo img{
+    margin-bottom: 15px;
+}
+.footer ul{
+    color: #6B7280;
+}
+.footer_links li{
+    margin-bottom: 25px ;
+}
+.footer_links li:hover{
+    color: #252432;
+    font-weight: bold;
+    transition: .3s;
+}
+.footer_icon{
+    display: flex;
+    gap: 24px;
+    margin-left: 0px;
+}
+.footer_icon img{
+    width: 36px;
+    height: 36px;
+    padding: 5px;
+}
+
 
 
 
@@ -372,5 +405,13 @@ header {
 
     .subscribe_content h2 {
         font-size: 2rem;
+    }
+    .footer{
+        flex-direction: column;
+        gap:0px;
+        margin-left: 15px;
+    }
+    .footer_logo{
+        margin-bottom: 20px;
     }
 }

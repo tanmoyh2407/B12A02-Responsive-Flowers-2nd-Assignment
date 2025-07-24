@@ -143,6 +143,15 @@ header {
 }
 
 /* plants lover section */
+
+.trusted_badge{
+    position: relative;
+    width: 285px;
+    height: 285px;
+    margin-left: 380px;
+    margin-bottom: -150px;
+}
+
 .plants_lover_title_subTitle {
     padding: 38px 0px 38px 60px;
 }
@@ -280,31 +289,37 @@ header {
 
 /* Footer section styles */
 
-.footer{
+.footer {
     margin: 50px 150px 30px 150px;
     display: flex;
     justify-content: space-between;
 }
-.footer_logo img{
+
+.footer_logo img {
     margin-bottom: 15px;
 }
-.footer ul{
+
+.footer ul {
     color: #6B7280;
 }
-.footer_links li{
-    margin-bottom: 25px ;
+
+.footer_links li {
+    margin-bottom: 25px;
 }
-.footer_links li:hover{
+
+.footer_links li:hover {
     color: #252432;
     font-weight: bold;
     transition: .3s;
 }
-.footer_icon{
+
+.footer_icon {
     display: flex;
     gap: 24px;
     margin-left: 0px;
 }
-.footer_icon img{
+
+.footer_icon img {
     width: 36px;
     height: 36px;
     padding: 5px;
@@ -390,6 +405,18 @@ header {
     .flwr_price {
         font-weight: bold;
     }
+    .trusted_badge{
+        display: none;
+    }
+
+    .plants_lover_title_subTitle {
+        padding: 0px;
+    }
+
+    .plants_lover_title_subTitle ol li {
+        margin-top: 10px;
+        margin-left: 30px;
+    }
 
     .offer_section {
         flex-direction: column;
@@ -406,12 +433,14 @@ header {
     .subscribe_content h2 {
         font-size: 2rem;
     }
-    .footer{
+
+    .footer {
         flex-direction: column;
-        gap:0px;
+        gap: 0px;
         margin-left: 15px;
     }
-    .footer_logo{
+
+    .footer_logo {
         margin-bottom: 20px;
     }
 }

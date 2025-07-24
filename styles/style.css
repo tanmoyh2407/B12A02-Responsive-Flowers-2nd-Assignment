@@ -39,6 +39,7 @@ main>section {
 .noto_serif50_bold {
     font-size: 3.13rem;
     color: #000000;
+    font-weight: bold;
 }
 
 .span_text {
@@ -141,6 +142,155 @@ header {
     font-weight: bold;
 }
 
+/* plants lover section */
+.plants_lover_title_subTitle {
+    padding: 38px 0px 38px 60px;
+}
+
+.plants_lover_title_subTitle ol li {
+    margin-top: 20px;
+}
+
+/* ********************Challenge Part********************** */
+.offer_section {
+    display: flex;
+    gap: 25px;
+}
+
+.left_column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40%;
+}
+
+.offer_box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.offer_box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    border-radius: 14px;
+}
+
+.offer_box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 15px;
+}
+
+.overlay_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 2;
+}
+
+.overlay_text h3 {
+    font-size: 1.16rem;
+    font-weight: bold;
+}
+
+.big_box h3 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.big_box a {
+    font-size: 1.35rem;
+    font-weight: 600;
+}
+
+/* ****************************************** */
+
+/* Join section style */
+
+.subscribe_section {
+    background-image: url('../assets/news-letter-bg.png');
+    background-size: cover;
+    background-position: center;
+    padding: 120px 30px;
+    text-align: center;
+    color: white;
+    position: relative;
+    margin-top: 100px;
+}
+
+.subscribe_section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(7, 51, 79, 0.4);
+    z-index: 0;
+}
+
+.subscribe_content {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.subscribe_content h2 {
+    font-size: 3.12rem;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.subscribe_form {
+    display: flex;
+    border-radius: 4px;
+    overflow: hidden;
+    background: white;
+}
+
+.subscribe_form input {
+    flex: 1;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+}
+
+.subscribe_form input::placeholder {
+    color: #999;
+}
+
+.subscribe_form button {
+    background-color: #E95A08;
+    color: white;
+    padding: 0 20px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* 
 ****
@@ -184,24 +334,43 @@ header {
         font-size: 1.8rem;
         color: #000000;
     }
-    .inter22_reg{
+
+    .inter22_reg {
         font-size: 14px;
     }
-    .flower_cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 30px;
-    column-gap: 20px;
-    margin-top: 40px;
-}
-.flwr_name,
-.flwr_price {
-    font-size: 1rem;
-    font-weight: 500;
-    color: #111111;
-}
 
-.flwr_price {
-    font-weight: bold;
-}
+    .flower_cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+        column-gap: 20px;
+        margin-top: 40px;
+    }
+
+    .flwr_name,
+    .flwr_price {
+        font-size: 1rem;
+        font-weight: 500;
+        color: #111111;
+    }
+
+    .flwr_price {
+        font-weight: bold;
+    }
+
+    .offer_section {
+        flex-direction: column;
+    }
+
+    .left_column {
+        width: 100%;
+    }
+
+    .subscribe_content {
+        max-width: 400px;
+    }
+
+    .subscribe_content h2 {
+        font-size: 2rem;
+    }
 }

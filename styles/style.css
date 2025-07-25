@@ -134,7 +134,7 @@ header {
 
 /* plants lover section */
 
-.trusted_badge{
+.trusted_badge {
     position: relative;
     width: 285px;
     height: 285px;
@@ -396,7 +396,8 @@ header {
     .flwr_price {
         font-weight: bold;
     }
-    .trusted_badge{
+
+    .trusted_badge {
         display: none;
     }
 
@@ -433,5 +434,15 @@ header {
 
     .footer_logo {
         margin-bottom: 20px;
+    }
+
+    .big_box h3 {
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+
+    .big_box a {
+        font-size: 1.1rem;
+        font-weight: 500;
     }
 }
